@@ -1,6 +1,9 @@
 import random
 import time
 
+from app.player_class import Player
+from app.poker_score import players_score
+
 # Test, how many rounds should be played to see which probability given hand is to win pre-flop
 deck = ['2C', '3C', '4C', '5C', '6C', '7C', '8C', '9C', 'TC', 'JC', 'QC', 'KC', 'AC', '2S', '3S', '4S',
         '5S',
@@ -12,8 +15,8 @@ deck = ['2C', '3C', '4C', '5C', '6C', '7C', '8C', '9C', 'TC', 'JC', 'QC', 'KC', 
 
 start = time.time()
 start_stack = 100
-alice = PlayerClass.Player('Alice', start_stack)
-bob = PlayerClass.Player('Bob', start_stack)
+alice = Player('Alice', start_stack)
+bob = Player('Bob', start_stack)
 players_list = [alice, bob]
 
 alice.cards = ['AC', 'AD']
@@ -31,7 +34,7 @@ for i in range(number_round):
     [deck.remove(bob.cards[i]) for i in range(2)]
     table = random.sample(deck, 5)
     [deck.remove(table[i]) for i in range(5)]
-    Poker_score.players_score(players_list, table)
+    players_score(players_list, table)
     if alice.score > bob.score:
         n_win += 1
     elif alice.score == bob.score:
