@@ -3,7 +3,7 @@
 ## Overview:
 The project is an python - pygame application that enables a player to engage in a two-player version of Texas Hold'em Poker, also known as heads-up poker, against of bot. 
 
-![Zrzut ekranu 2023-09-19 185853](https://github.com/jarczano/Texas-Holdem-Poker-Pygame/assets/107764304/1a289a0b-a357-4371-82a9-243dfc2d3a2c)
+![Zrzut ekranu 2023-09-19 185853](https://github.com/jarczano/Texas-Holdem-Poker-Pygame/assets/107764304/2df184ce-1f25-4b84-859a-e7dc617ea725)
 
 ## Usage:
 - Clone the repository: `git clone https://github.com/jarczano/Sudoku-Solver-Web-App`
